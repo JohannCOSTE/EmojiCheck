@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint">Entrez vos Emojis</string>
+    <string name="version">Version</string>
+    <string name="notemoji">La saisie n\'est pas un Emoji</string>
+    <string name="twoemoji">Version non disponible</string>
+    <string name="loading">Chargement, veuillez patienter…</string>
+    <string name="oom">Oups! Il semblerait que votre appareil n\'arrive pas à charger toutes les images</string>
+    <string name="hideKeyboard">Cacher clavier</string>
+    <string name="settings">Paramètres</string>
+    <string name="defaultEmoji">Emojis par défaut</string>
+    <string name="numberOfEmoji">Nombre de colonnes</string>
+
+    <string-array name="listDefaultEmoji">
+        <item>Apple</item>
+        <item>Google</item>
+        <item>Google Blob</item>
+        <item>Twitter</item>
+        <item>Facebook</item>
+        <item>Samsung</item>
+        <item>Windows</item>
+        <item>Tous</item>
+    </string-array>
+
+    <string-array name="listNumberEmoji">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+</resources>
