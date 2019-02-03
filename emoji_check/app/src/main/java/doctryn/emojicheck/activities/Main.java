@@ -177,7 +177,7 @@ public class Main extends Activity {
             if(list_to_translate.size() == 1 && Emoji.release){
                 Integer v = version.get(list_to_translate.get(0));
                 if(v == null) bug(getString(R.string.twoemoji));
-                else  version(v);
+                else version(v);
             }
             else bug(getString(R.string.twoemoji));
 
@@ -365,6 +365,9 @@ public class Main extends Activity {
                 break;
             case 11:
                 mVer = "Emoji 11.0 (05/2018)";
+                break;
+            case 12:
+                mVer = "Emoji 12.0 (03/2019)";
                 break;
             default:
                 mVer = "";

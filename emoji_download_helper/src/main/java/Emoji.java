@@ -15,8 +15,8 @@ public class Emoji {
         return Jsoup.parse(input, "UTF-8", "");
     }
 
-    public void process(Document doc, String output){
-        for(int i =0; i< 7; i++) processDevice(doc, output, i); // 0: Apple, 1: Google, 2: Twitter, 3: One, 4: Facebook, 5: Samsung, 6: Windows
+    public void process(Document doc, String outputDirectory){
+        for(int i =0; i< 7; i++) processDevice(doc, outputDirectory, i); // 0: Apple, 1: Google, 2: Twitter, 3: One, 4: Facebook, 5: Samsung, 6: Windows
     }
 
     public void processDevice(Document doc, String outputDirectory, int device){
@@ -24,13 +24,13 @@ public class Emoji {
             Elements newsHeadlines = doc.select("tr");
             String outputFile = outputDirectory;
             switch (device){
-                case 0: outputFile += "apple.html"; break;
-                case 1: outputFile += "google.html"; break;
-                case 2: outputFile += "twitter.html"; break;
-                case 3: outputFile += "one.html"; break;
-                case 4: outputFile += "fb.html"; break;
-                case 5: outputFile += "samsung.html"; break;
-                case 6: outputFile += "windows.html"; break;
+                case 0: outputFile += "apple.xml"; break;
+                case 1: outputFile += "google.xml"; break;
+                case 2: outputFile += "twitter.xml"; break;
+                case 3: outputFile += "one.xml"; break;
+                case 4: outputFile += "fb.xml"; break;
+                case 5: outputFile += "samsung.xml"; break;
+                case 6: outputFile += "windows.xml"; break;
             }
 
             PrintWriter writer = new PrintWriter(outputFile, "UTF-8");

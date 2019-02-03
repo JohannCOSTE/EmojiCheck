@@ -26,7 +26,7 @@ public class Release {
         Document doc;
         try {
             doc = release.getDocumentFromUrl("https://emojipedia.org/emoji-12.0/");
-            release.process(doc, "");
+            release.process(doc, "emoji.xml");
         } catch (IOException e) {
             e.printStackTrace();
         }

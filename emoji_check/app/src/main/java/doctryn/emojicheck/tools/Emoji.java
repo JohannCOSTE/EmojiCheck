@@ -45,22 +45,22 @@ public class Emoji {
         hmaps.add(samsung);
         hmaps.add(windows);
 
-        data_files.add("apple.html");
-        data_files.add("google.html");
-        data_files.add("googleb.html");
-        data_files.add("twitter.html");
-        data_files.add("fb.html");
-        data_files.add("samsung.html");
-        data_files.add("windows.html");
+        data_files.add("apple.xml");
+        data_files.add("google.xml");
+        data_files.add("googleb.xml");
+        data_files.add("twitter.xml");
+        data_files.add("fb.xml");
+        data_files.add("samsung.xml");
+        data_files.add("windows.xml");
 
         if(!release) {
-            fillVersion("v1.html", 1);
-            fillVersion("v2.html", 2);
-            fillVersion("v3.html", 3);
-            fillVersion("v4.html", 4);
-            fillVersion("v5.html", 5);
-            fillVersion("v11.html", 11);
-            fillVersion("v12.html", 12);
+            fillVersion("v1.xml", 1);
+            fillVersion("v2.xml", 2);
+            fillVersion("v3.xml", 3);
+            fillVersion("v4.xml", 4);
+            fillVersion("v5.xml", 5);
+            fillVersion("v11.xml", 11);
+            fillVersion("v12.xml", 12);
             Emoji.release = true;
         }
     }
