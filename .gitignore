@@ -43,3 +43,6 @@ Thumbs.db
 emoji_check/app/app-release.apk
 emoji_check/app/release/app-release.apk
 emoji_check/app/release/release/app.aab
+emoji_download_helper/target/classes/Release.class
+emoji_download_helper/target/classes/Emoji.class
+emoji_check/.idea/caches/build_file_checksums.ser

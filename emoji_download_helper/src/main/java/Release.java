@@ -1,14 +1,17 @@
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.*;
 
 public class Release {
     private void process(Document doc, String output) throws FileNotFoundException, UnsupportedEncodingException {
-        Elements newsHeadlines = doc.select(".emoji");
+        Elements newsHeadlines = doc.select("article");
+        Element article = newsHeadlines.get(0);
+        Elements emojis = article.select(".emoji");
         PrintWriter writer = new PrintWriter(output, "UTF-8");
-        writer.print(newsHeadlines);
+        writer.print(emojis);
         writer.close();
     }
 
